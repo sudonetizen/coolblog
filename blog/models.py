@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.db import models
+from taggit.managers import TaggableManager
 from django.urls import reverse
 from django.utils import timezone
 
@@ -57,6 +58,8 @@ class Post(models.Model):
                 self.slug 
             ]
     )
+
+    tags = TaggableManager()
 
 
 class Comment(models.Model):
