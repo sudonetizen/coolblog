@@ -3,3 +3,4 @@
 .python-version
 __pycache__/
 *.sqlite3
+django_project_data.json
